@@ -5,7 +5,7 @@
 import urllib
 
 url="http://www.weather.com.cn/beijing/index.shtml"
-tel="13520200311"
+tel="13555555555"
 
 tmp=[]
 page=urllib.urlopen(url)
@@ -19,7 +19,7 @@ tianqi=','.join(tmp)
 
 
 def SMS(x,y):
-    smsurl="http://ms.58control.cn/sms/warn?function=1000\&ms=%s&mo=%s" %(x,y)
+    smsurl="http://s.sms.com/warn?function=1000\&ms=%s&mo=%s" %(x,y)
     ms=urllib.urlopen(smsurl)
     ms.close()
 
